@@ -68,6 +68,11 @@ from sklearn.linear_model import RidgeCV
 regressor = RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0, 1000.0, 4135.0, 4136.0, 4137.0])
 trainAndPredict(regressor, 'submission-005.csv')
 
+# With the same feature vectors, try Ridge CV regressor but at lower alpha
+from sklearn.linear_model import RidgeCV
+regressor = RidgeCV(alphas=[0.1, 1.0, 10.0, 100.0])
+trainAndPredict(regressor, 'submission-006.csv')
+
 # Scale features (is this optional?)
 '''
 X_scaler = StandardScaler()
