@@ -1,0 +1,3 @@
+To install the Image Proc C module, type:
+sudo python ./imageproc_setup.py install
+
