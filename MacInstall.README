@@ -1,22 +1,22 @@
 Install FreeImage:
-1. In FreeImage directory, type "make"
-2. In FreeImage directory, type "sudo make install"
+1. In libs/FreeImage directory, type "make"
+2. In libs/FreeImage directory, type "sudo make install"
 
 Install libJpeg:
-1. In jpeg-9a directory, type "./configure && make"
-2. In jpeg-9a directory, type "sudo make install" 
+1. In libs/jpeg-9a directory, type "./configure && make"
+2. In libs/jpeg-9a directory, type "sudo make install" 
 
 Install libPng:
-1. In libpng-1.6.17 directory, type "./configure && make"
-2. In libpng-1.6.17 directory, type "sudo make install" 
+1. In libs/libpng-1.6.17 directory, type "./configure && make"
+2. In libs/libpng-1.6.17 directory, type "sudo make install" 
 
 Install libtiff:
-1. In tiff-4.0.4 directory, type "./configure && make"
-2. In tiff-4.0.4 directory, type "sudo make install" 
+1. In libs/tiff-4.0.4 directory, type "./configure && make"
+2. In libs/tiff-4.0.4 directory, type "sudo make install" 
 
 Install libwebp:
-1. In libwebp-0.4.3 directory, type "./configure && make"
-2. In libwebp-0.4.3 directory, type "sudo make install" 
+1. In libs/libwebp-0.4.3 directory, type "./configure && make"
+2. In libs/libwebp-0.4.3 directory, type "sudo make install" 
 
 Install imread:
 1. Parallel to "kaggle" directory, run command:
