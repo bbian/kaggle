@@ -18,7 +18,19 @@ Install libwebp:
 1. In libs/libwebp-0.4.3 directory, type "./configure && make"
 2. In libs/libwebp-0.4.3 directory, type "sudo make install" 
 
+Uninstall imread and Mahotas if they are already installed:
+sudo pip uninstall mahotas
+sudo pip uninstall imread
+
 Install imread:
 1. Parallel to "kaggle" directory, run command:
 git clone https://github.com/qbbian/imread.git
+
 2. In imread direcotry, type "sudo python setup.py install"
+
+Install Mahotas:
+1. Parallel to "kaggle" directory, run command:
+git clone https://github.com/luispedro/mahotas.git
+
+2. In mahotas directory, type "sudo python setup.py install"
+
