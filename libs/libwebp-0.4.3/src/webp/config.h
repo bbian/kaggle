@@ -124,7 +124,7 @@
 #define WEBP_HAVE_SSE2 1
 
 /* Set to 1 if TIFF library is installed */
-#define WEBP_HAVE_TIFF 1
+/* #undef WEBP_HAVE_TIFF */
 
 /* Undefine this to disable thread support. */
 #define WEBP_USE_THREAD 1

@@ -1,6 +1,6 @@
 #! /bin/sh
 # Generated automatically by config.status (libpng) 1.6.17
-# Libtool was configured on host devbook.local:
+# Libtool was configured on host donot.servebeer.com:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
 # Provide generalized library-building support services.
@@ -91,16 +91,16 @@ PATH_SEPARATOR=":"
 
 # The host system.
 host_alias=
-host=x86_64-apple-darwin14.4.0
-host_os=darwin14.4.0
+host=x86_64-apple-darwin14.5.0
+host_os=darwin14.5.0
 
 # The build system.
 build_alias=
-build=x86_64-apple-darwin14.4.0
-build_os=darwin14.4.0
+build=x86_64-apple-darwin14.5.0
+build_os=darwin14.5.0
 
 # A BSD- or MS-compatible name lister.
-NM="/opt/local/bin/nm"
+NM="/usr/bin/nm"
 
 # Whether we need soft or hard links.
 LN_S="ln -s"
