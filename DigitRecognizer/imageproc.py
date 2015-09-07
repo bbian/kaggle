@@ -46,12 +46,24 @@ y_train = df_train['label'].values
 df_test = pd.read_csv('test.csv', header=0, delimiter=',')
 X_test = df_test[:].values
 
+for idx, x in enumerate(X_train):
+	image = np.append(X_train[idx], np.array([y_train[idx]]), axis=0)
+	image = image.astype(np.uint8)
+	myLabel = imageproc_np.imageproc_func_np(image)
+	# myLabel will be ignored for training set
+	sys.stdout.write('*')
+	sys.stdout.flush()
+print "\n"
+
 predictions = []
-for item in X_test:
+for idx, x in enumerate(X_test):
+	# label 255 means the image is a test image with no label
+	image = np.append(x, np.array([255]), axis=0)
+	image = image.astype(np.uint8)
+	myLabel = imageproc_np.imageproc_func_np(image)
 	sys.stdout.write('.')
 	sys.stdout.flush()
-	predictions.append(nn_classify(X_train, y_train, item))
-
+	predictions.append(myLabel[0])
 print "\n"
 
 y_pred = np.array(predictions)
@@ -60,3 +72,4 @@ submission = y_pred.reshape(y_pred.shape[0], 1)
 submit_df = pd.DataFrame(submission)
 submit_df.index += 1
 submit_df.to_csv("results.csv", header=['Label'], index_label='ImageId')
+
